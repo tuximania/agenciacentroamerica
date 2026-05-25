@@ -54,7 +54,7 @@ git clone https://github.com/tuximania/agenciacentroamerica.git
 cd agenciacentroamerica
 ```
 
-Abre `Index.html` en tu navegador. No requiere servidor ni dependencias.
+Abre `index.html` en tu navegador. No requiere servidor ni dependencias.
 
 ---
 
@@ -62,7 +62,12 @@ Abre `Index.html` en tu navegador. No requiere servidor ni dependencias.
 
 - Diseño **responsive** (mobile-first, breakpoints 768px y 1024px)
 - Navbar con **scroll effect** y **menú hamburguesa** animado
-- Validación de formulario: nombre, email, teléfono salvadoreño, destino, personas y fecha futura
+- Validación de formulario: nombre, email con regex, teléfono salvadoreño, destino, personas y fecha futura
+- Mensajes de error específicos por campo, se limpian al corregir
+- Mensaje de éxito personalizado con nombre y correo del usuario
+- Contador animado con `IntersectionObserver` al hacer scroll
+- Sección de testimonios de clientes
+- Botón **WhatsApp flotante** con mensaje pre-escrito
 - Al hacer clic en una tarjeta de destino, **pre-selecciona** el destino en el formulario
 - **Año dinámico** en el footer con JavaScript
 - Botón "volver arriba" que aparece al hacer scroll
