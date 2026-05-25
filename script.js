@@ -1,3 +1,22 @@
+// === CONTADOR ANIMADO ===
+const counters = document.querySelectorAll('.count');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el     = entry.target;
+    const target = +el.dataset.target;
+    const step   = Math.ceil(target / 60);
+    let current  = 0;
+    const timer  = setInterval(() => {
+      current += step;
+      if (current >= target) { el.textContent = target; clearInterval(timer); }
+      else { el.textContent = current; }
+    }, 25);
+    countObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => countObserver.observe(c));
+
 // === NAVBAR: scroll effect + hamburger ===
 const navbar   = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
