@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agencia de Viajes Centroamérica | El Salvador</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <i class="fas fa-plane-departure"></i> ViajaCentro
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Destinos</a></li>
+        <li><a href="#cotizacion">Cotizar</a></li>
+        <li><a href="#cotizacion" class="nav-cta">Reservar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Saliendo desde El Salvador</p>
+      <h1>Descubre la Magia de <br><span>Centroamérica</span></h1>
+      <p class="hero-desc">Paquetes turísticos a Guatemala, Honduras, Nicaragua, Costa Rica, Panamá y Belice. Todo incluido desde <strong>$299</strong>.</p>
+      <div class="hero-btns">
+        <a href="#servicios" class="btn btn-primary">Ver Destinos</a>
+        <a href="#cotizacion" class="btn btn-outline">Cotizar Ahora</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#nosotros"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <div class="nosotros-grid">
+        <div class="nosotros-img">
+          <div class="img-placeholder">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-num">+500</span>
+            <span class="stat-label">Viajeros felices</span>
+          </div>
+        </div>
+        <div class="nosotros-text">
+          <span class="section-tag">Quiénes Somos</span>
+          <h2>Tu agencia de confianza en El Salvador</h2>
+          <p>Somos una agencia de viajes salvadoreña especializada en turismo dentro de Centroamérica. Con más de 8 años de experiencia, diseñamos paquetes accesibles y experiencias únicas para familias, parejas y grupos.</p>
+          <p>Nos encargamos de todo: vuelos, hospedaje, traslados y tours guiados. Solo tienes que hacer las maletas.</p>
+          <ul class="nosotros-lista">
+            <li><i class="fas fa-check-circle"></i> Precios en dólares, sin sorpresas</li>
+            <li><i class="fas fa-check-circle"></i> Atención personalizada 7 días a la semana</li>
+            <li><i class="fas fa-check-circle"></i> Pagos en cuotas disponibles</li>
+            <li><i class="fas fa-check-circle"></i> Seguros de viaje incluidos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS / DESTINOS -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <span class="section-tag center">Nuestros Paquetes</span>
+      <h2 class="section-title center">Destinos desde El Salvador</h2>
+      <p class="section-desc center">Precios por persona en habitación doble. Incluye hospedaje, traslados y tour guiado.</p>
+
+      <div class="cards-grid">
+
+        <div class="card" data-dest="Guatemala">
+          <div class="card-img guatemala">
+            <span class="card-badge">Más Vendido</span>
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Guatemala</h3>
+            <p>Antigua, Lago Atitlán y Tikal. Maravillas mayas al alcance de tu mano.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$299</strong></span>
+              <span class="noches">3 noches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-dest="Honduras">
+          <div class="card-img honduras">
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Honduras</h3>
+            <p>Roatán, Copán y Tegucigalpa. Playas y cultura en un solo destino.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$349</strong></span>
+              <span class="noches">4 noches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-dest="Nicaragua">
+          <div class="card-img nicaragua">
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Nicaragua</h3>
+            <p>Granada, Ometepe y San Juan del Sur. El destino más auténtico de CA.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$279</strong></span>
+              <span class="noches">3 noches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-dest="Costa Rica">
+          <div class="card-img costarica">
+            <span class="card-badge premium">Premium</span>
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Costa Rica</h3>
+            <p>Arenal, Manuel Antonio y Monteverde. Naturaleza y aventura sin igual.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$549</strong></span>
+              <span class="noches">5 noches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-dest="Panamá">
+          <div class="card-img panama">
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Panamá</h3>
+            <p>Canal de Panamá, Casco Viejo y San Blas. Modernidad y paraíso natural.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$479</strong></span>
+              <span class="noches">4 noches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-dest="Belice">
+          <div class="card-img belice">
+            <span class="card-badge premium">Exclusivo</span>
+            <div class="card-overlay">
+              <a href="#cotizacion" class="btn btn-sm">Cotizar</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Belice</h3>
+            <p>Gran Barrera de Coral, Cayo y ruinas mayas. Buceo y aventura.</p>
+            <div class="card-footer">
+              <span class="price">desde <strong>$599</strong></span>
+              <span class="noches">5 noches</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE COTIZACIÓN -->
+  <section class="cotizacion" id="cotizacion">
+    <div class="container">
+      <span class="section-tag center">Contacto</span>
+      <h2 class="section-title center">Solicita tu Cotización</h2>
+      <p class="section-desc center">Completa el formulario y te contactamos en menos de 24 horas.</p>
+
+      <form class="form" id="form-cotizacion" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" />
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="7000-0000" />
+            <span class="form-error" id="error-telefono"></span>
+          </div>
+          <div class="form-group">
+            <label for="destino">Destino de interés *</label>
+            <select id="destino" name="destino">
+              <option value="">Selecciona un destino</option>
+              <option value="Guatemala">Guatemala — desde $299</option>
+              <option value="Honduras">Honduras — desde $349</option>
+              <option value="Nicaragua">Nicaragua — desde $279</option>
+              <option value="Costa Rica">Costa Rica — desde $549</option>
+              <option value="Panamá">Panamá — desde $479</option>
+              <option value="Belice">Belice — desde $599</option>
+            </select>
+            <span class="form-error" id="error-destino"></span>
+          </div>
+          <div class="form-group">
+            <label for="personas">Número de personas *</label>
+            <input type="number" id="personas" name="personas" placeholder="2" min="1" max="50" />
+            <span class="form-error" id="error-personas"></span>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha tentativa de viaje *</label>
+            <input type="date" id="fecha" name="fecha" />
+            <span class="form-error" id="error-fecha"></span>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="mensaje">Mensaje adicional</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tu viaje ideal..."></textarea>
+        </div>
+        <div class="form-group full form-check">
+          <label class="checkbox-label">
+            <input type="checkbox" id="terminos" name="terminos" />
+            <span>Acepto los <a href="#">términos y condiciones</a> y política de privacidad *</span>
+          </label>
+          <span class="form-error" id="error-terminos"></span>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary btn-lg" id="btn-submit">
+            <i class="fas fa-paper-plane"></i> Enviar Cotización
+          </button>
+        </div>
+      </form>
+
+      <div class="form-success" id="form-success">
+        <i class="fas fa-check-circle"></i>
+        <h3>¡Cotización enviada!</h3>
+        <p>Gracias <span id="success-nombre"></span>. Te contactaremos pronto al correo <span id="success-email"></span>.</p>
+        <button class="btn btn-outline" id="btn-nueva">Enviar otra cotización</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <i class="fas fa-plane-departure"></i> ViajaCentro
+          </a>
+          <p>Agencia de viajes salvadoreña especializada en turismo centroamericano. Tu aventura comienza aquí.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Destinos</h4>
+          <ul>
+            <li><a href="#servicios">Guatemala</a></li>
+            <li><a href="#servicios">Honduras</a></li>
+            <li><a href="#servicios">Nicaragua</a></li>
+            <li><a href="#servicios">Costa Rica</a></li>
+            <li><a href="#servicios">Panamá</a></li>
+            <li><a href="#servicios">Belice</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Agencia</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Paquetes</a></li>
+            <li><a href="#cotizacion">Cotizar</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</li>
+            <li><i class="fas fa-phone"></i> +503 7000-0000</li>
+            <li><i class="fas fa-envelope"></i> info@viajacentro.sv</li>
+            <li><i class="fas fa-clock"></i> Lun–Sáb: 8am – 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ViajaCentro. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class="fas fa-heart"></i> en El Salvador</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-top" id="back-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
